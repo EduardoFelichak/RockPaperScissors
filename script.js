@@ -17,31 +17,31 @@ function resetInimigo(){
 };
 
 function validarVitoria(){
-    if(playerOpt == 'papel'){
-        if(inimigoOpt == 'papel'){
-            resultado = 'Empate!'
-        }else if(inimigoOpt == 'tesoura'){
-            resultado = 'Perdeu!';
-        }else if(inimigoOpt == 'pedra'){
-            resultado = 'Venceu!';
+    if(playerOpt == 'paper'){
+        if(inimigoOpt == 'paper'){
+            resultado = 'Draw!'
+        }else if(inimigoOpt == 'scissor'){
+            resultado = 'You lost!';
+        }else if(inimigoOpt == 'rock'){
+            resultado = 'You win!';
         }
     }
-    if(playerOpt == 'pedra'){
-        if(inimigoOpt == 'papel'){
-            resultado = 'Perdeu!'
-        }else if(inimigoOpt == 'tesoura'){
-            resultado = 'Venceu!';
-        }else if(inimigoOpt == 'pedra'){
-            resultado = 'Empate!';
+    if(playerOpt == 'rock'){
+        if(inimigoOpt == 'paper'){
+            resultado = 'You lost!'
+        }else if(inimigoOpt == 'scissor'){
+            resultado = 'You win!';
+        }else if(inimigoOpt == 'rock'){
+            resultado = 'Draw!';
         }
     }
-    if(playerOpt == 'tesoura'){
-        if(inimigoOpt == 'papel'){
-            resultado = 'Venceu!'
-        }else if(inimigoOpt == 'tesoura'){
-            resultado = 'Empate!';
-        }else if(inimigoOpt == 'pedra'){
-            resultado = 'Perdeu!';
+    if(playerOpt == 'scissor'){
+        if(inimigoOpt == 'paper'){
+            resultado = 'You win!'
+        }else if(inimigoOpt == 'scissor'){
+            resultado = 'Draw!';
+        }else if(inimigoOpt == 'rock'){
+            resultado = 'You lost!';
         }
     }
     setTimeout(()=>{
