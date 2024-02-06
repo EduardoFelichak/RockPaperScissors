@@ -1,0 +1,42 @@
+*{
+    background-color: whitesmoke;
+}
+
+#title{
+    text-align: center;
+}
+
+.player-options img,
+.enemy-options img{
+    max-width: 200px;
+    opacity: 0.3;
+    
+}
+
+.player-options img{
+    cursor: pointer;
+}
+
+.player-options,
+.enemy-options{
+    width: 50%;
+    text-align: center;
+}
+
+.align{
+    display: flex;
+}
+
+.info {
+    align-self: center;
+}
+
+.info button{
+    border-color: white;
+    border-radius: 100px;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+    cursor: pointer;
+}
